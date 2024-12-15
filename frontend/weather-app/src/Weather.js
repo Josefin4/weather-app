@@ -22,7 +22,7 @@ const Weather = () => {
             <h1>Weather App</h1>
             <input
                 type="text"
-                placeholder="Enter city"
+                placeholder="Enter city here"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
             />
