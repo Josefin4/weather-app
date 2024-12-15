@@ -7,7 +7,8 @@ const Weather = () => {
 
     const fetchWeather = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/api/weather", {
+            const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/api/weather`;
+            const response = await axios.get(apiUrl, {
                 params: { city },
             });
             setWeather(response.data);
